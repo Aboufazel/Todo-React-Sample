@@ -1,12 +1,13 @@
 
 import './App.css';
 import TodoProvider from "./context/todoContext";
-import Home from "./components/Home";
+import Router from "./router/Router";
+import {RouterProvider} from "react-router";
 
 function App() {
   return (
     <TodoProvider>
-      <Home/>
+      <RouterProvider router={Router}/>
     </TodoProvider>
   );
 }
